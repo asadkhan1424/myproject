@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us – Salt'n Pepper</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav img {
+      height: 60px;
+    }
+    .nav .element a {
+      margin-left: 20px;
+      padding: 8px 16px;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .nav .element a.Home,
+    .nav .element a.About {
+      border: none;
+    }
+    .nav .element a.Public,
+    .nav .element a.Franchise {
+      border: 1px solid #fff;
+    }
+    .nav .element a.Order {
+      background: #e60000;
+      border: 1px solid #e60000;
+    }
+    .nav .element a:hover {
+      background: #e60000;
+      color: #fff;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin: 60px 20px 20px;
+      letter-spacing: 2px;
+      color: #000;
+    }
+
+    /* Paragraph styling */
+    section p,
+    .intro p {
+      text-align: center;
+      max-width: 900px;
+      margin: 10px auto;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Intro / About section */
+    .intro {
+      padding: 60px 0 40px;
+      background: #f5f5f5;
+    }
+
+    /* Restaurant blocks */
+    .about-restaurant {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+    .about-restaurant:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .about-restaurant img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    .about-restaurant-text {
+      flex: 1;
+    }
+    .about-restaurant-text span {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    .about-restaurant-text p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Express Franchise section */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 40px 20px 80px;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .card-container .box-hold {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .box-hold img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .box-hold small {
+      display: block;
+      color: #e60000;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin: 10px 0 5px;
+    }
+    .box-hold h3 {
+      margin-bottom: 8px;
+      color: #000;
+      font-size: 20px;
+    }
+    .box-hold p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .box-hold a {
+      display: inline-block;
+      border: 1px solid #e60000;
+      padding: 8px 16px;
+      color: #e60000;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .box-hold a:hover {
+      background: #e60000;
+      color: #fff;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .about-restaurant {
+        flex-direction: column;
+      }
+      .section-title, .intro, .card-container {
+        padding: 20px;
+      }
+      .nav {
+        flex-direction: column;
+      }
+      .nav .element {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="nav">
+    <img src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp" alt="Salt'n Pepper Logo" />
+    <div class="element">
+      <a href="index.html" class="Home">Home</a>
+      <a href="about.html" class="About">About Us</a>
+      <a href="#" class="Public">Publications</a>
+      <a href="#" class="Franchise">Get a Franchise</a>
+      <a href="#" class="Order">Order Online</a>
+    </div>
+  </div>
+
+  <!-- Intro / Overview -->
+  <section class="intro">
+    <h1 class="section-title">About Us</h1>
+    <p>The Salt’n Pepper is Pakistan’s most recognized and distinguished hospitality brand …</p>
+    <p>For over 3 decades, the group’s focus has been to provide their guests with an exceptional dining experience.</p>
+  </section>
+
+  <!-- Restaurant Sections -->
+  <section class="about-restaurant">
+    <img src="https://images-beta.tossdown.com/site/49597e50-0648-4397-bf3c-b8569d5cd8c0.webp" alt="Salt'n Pepper Restaurant Lahore" />
+    <div class="about-restaurant-text">
+      <span>Salt'n Pepper Restaurant</span>
+      <p>The Salt’n Pepper Restaurants at Mall and Liberty Market Lahore …</p>
+    </div>
+  </section>
+
+  <section class="about-restaurant">
+    <img src="https://images-beta.tossdown.com/site/63fd2f60-92e8-4f52-a0b7-4da1e2ebe04d.webp" alt="Salt'n Pepper Village Lahore" />
+    <div class="about-restaurant-text">
+      <span>Salt'n Pepper Village Restaurant</span>
+      <p>The Village restaurant created a new concept of “Live Buffet” …</p>
+    </div>
+  </section>
+
+  <section class="about-restaurant">
+    <img src="https://images-beta.tossdown.com/site/eeedfcd2-f134-4748-a257-8f9eb00fe082.webp" alt="Salt'n Pepper Islamabad" />
+    <div class="about-restaurant-text">
+      <span>Salt'n Pepper Islamabad</span>
+      <p>In February 2012, the first franchise of Salt’n Pepper restaurants was opened at Blue Area, Islamabad …</p>
+    </div>
+  </section>
+
+  <section class="about-restaurant">
+    <img src="https://images-beta.tossdown.com/site/a1520a05-acdb-4aa8-a2cd-2fe1b47beb62.webp" alt="Salt'n Pepper Faisalabad" />
+    <div class="about-restaurant-text">
+      <span>Salt'n Pepper Faisalabad</span>
+      <p>Faisalabad city … has a franchise of Salt’n Pepper Restaurant since November 2016 …</p>
+    </div>
+  </section>
+
+  <section class="about-restaurant">
+    <img src="https://images-beta.tossdown.com/site/236238d6-6611-444a-88ef-ceb61d204ff8.webp" alt="Salt'n Pepper Bahawalpur" />
+    <div class="about-restaurant-text">
+      <span>Salt'n Pepper Bahawalpur</span>
+      <p>Operational since January 2018 … seating capacity 150+ including al fresco seating …</p>
+    </div>
+  </section>
+
+  <!-- Express Franchises -->
+  <h2 class="section-title">Salt’n Pepper Express Franchises</h2>
+  <div class="card-container">
+    <div class="box-hold">
+      <img src="https://static.tossdown.com/images/0f3ddba0-18a0-450e-af77-188aeb795934.webp" alt="Express Sargodha" />
+      <small>SARGODHA</small>
+      <h3>Salt'n Pepper Express</h3>
+      <p>Opposite Sargodha Arts Council Babar Road</p>
+      <a href="#">Get Directions</a>
+    </div>
+    <div class="box-hold">
+      <img src="https://static.tossdown.com/images/171bb884-f60a-4d94-a0b9-78204522564e.webp" alt="Express Jhelum" />
+      <small>JHELUM</small>
+      <h3>Salt'n Pepper Express</h3>
+      <p>Opposite Sargodha Arts Council Babar Road</p>
+      <a href="#">Get Directions</a>
+    </div>
+    <div class="box-hold">
+      <img src="https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp" alt="Express Faisal Town" />
+      <small>FAISAL TOWN</small>
+      <h3>Salt'n Pepper Express</h3>
+      <p>Opposite Sargodha Arts Council Babar Road</p>
+      <a href="#">Get Directions</a>
+    </div>
+  </div>
+
+  <!-- Village Franchise -->
+  <h2 class="section-title">Salt’n Pepper Village Franchise – Gujranwala</h2>
+  <div class="card-container">
+    <div class="box-hold">
+      <img src="https://images-beta.tossdown.com/site/63fd2f60-92e8-4f52-a0b7-4da1e2ebe04d.webp" alt="Village Gujranwala" />
+      <small>GUJRANWALA</small>
+      <h3>Salt'n Pepper Village Restaurant</h3>
+      <p>Adjacent to Rida Marquees / DHA Main Gate, GT Road Gujranwala Cantt</p>
+      <a href="#">Ph: 055-3884500</a>
+    </div>
+  </div>
+
+  <!-- Footer Placeholder -->
+  <footer style="text-align:center; padding:40px; color:#555; font-size:14px;">
+    <p>&copy; 2025 Salt’n Pepper Restaurants. All rights reserved.</p>
+    <p>Contact us: info@saltnpepper.com.pk | +92 42 00000000</p>
+  </footer>
+</body>
+</html>
