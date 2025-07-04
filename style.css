@@ -443,7 +443,23 @@ p {
     font-size: 20px;
 
 }
-      
-.bold{
+
+.bold {
     font-weight: bold
+}
+
+.images-video {
+    display: flex;
+    padding-left: 2%;
+    height: auto;
+}
+
+.food-image img {
+    height: 353.77px;
+    width: 18vw;
+}
+video{
+    width: 199px;
+    height: auto;
+    margin-top: 9px;
 }
