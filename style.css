@@ -463,3 +463,16 @@ video{
     height: auto;
     margin-top: 9px;
 }
+.site{
+    font-size: small;
+}
+.font-size{
+    font-size: larger !important;
+    text-align:left ;
+}
+.footer{
+    display: flex;
+    margin-top: 2%;
+    padding: 10px;
+    justify-content: space-between;
+}
