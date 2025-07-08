@@ -458,21 +458,80 @@ p {
     height: 353.77px;
     width: 18vw;
 }
-video{
+
+video {
     width: 199px;
     height: auto;
     margin-top: 9px;
 }
-.site{
+
+.site {
     font-size: small;
+    margin-left: 20px
 }
-.font-size{
-    font-size: larger !important;
-    text-align:left ;
+
+.font-size {
+    font-size: large !important;
+    text-align: left;
+    margin-left: 100px;
 }
-.footer{
+
+.footer {
     display: flex;
     margin-top: 2%;
     padding: 10px;
-    justify-content: space-between;
+    gap: 70px;
+    margin-top: 120px;
+}
+
+.li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.margin-left {
+    margin-left: -260px;
+    margin-top: 35px;
+}
+
+.img-margin {
+    margin-left: -410px;
+}
+
+.text-left {
+    text-align: left;
+    margin-left: 6%;
+}
+
+.text-lef {
+    margin-left: -5%;
+}
+
+.bg {
+    background-color: red;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+.align {
+    margin-left: -52px;
+}
+
+.block {
+    display: block;
+    width: 8vw;
+    height: 5vh;
+    margin-left: -50px;
+}
+.background{
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.top{
+    margin-top: 1%;
 }
